@@ -130,12 +130,8 @@ Ansonsten haben wir den vorgegebenen code, den wir von der Sensebox-Registrierun
 ## OpenSenseMap
 
 Wir haben auf OpenSenseMap folgende Sensoren registriert:
-| Phänomen        | Einheit           | Typ  |
-| ------------- |-------------| -----|
-| Luftfeuchtigkeit      | % | HDC1008 |
-| Temperatur      | °C      |   HDC1008 |
-| UV-Intensität | µW/cm²      |    VEML6070 |
-| Licht | LUX      |    TSL45315 |
+
+<img src="https://github.com/LFSchmidt/Uni-Sensebox/blob/master/Table.jpg">
 
 ## Stationsaufbau
 Unsere Station haben wir in die Schutzbox verpackt und die Lichtsensoren mithilfe von Heißkleber am Deckel angebracht. Der Temperatur-und Feuchtigkeitssensor wurde außen in einer kleinen Plastikbox (als Schutz vor Regen) angebracht.
