@@ -141,6 +141,8 @@ Wir haben auf OpenSenseMap folgende Sensoren registriert:
 Unsere Station haben wir in die Schutzbox verpackt und die Lichtsensoren mithilfe von Heißkleber am Deckel angebracht. Der Temperatur-und Feuchtigkeitssensor wurde außen in einer kleinen Plastikbox (als Schutz vor Regen) angebracht.
 Danach wurde die Box längs und quer mit Kabelbinder verschnürt und, mithilfe einer Paketschnur und eines Hakens, außen am Fenster angebracht. So kann die Box auf das Dach hängen, fällt aber nicht herunter.
 
+<img src="https://github.com/LFSchmidt/Uni-Sensebox/blob/master/Sensbox_nah.jpg" width="800">
+<img src="https://github.com/LFSchmidt/Uni-Sensebox/blob/master/Sensebox_Befestigung.jpg" width="800">
 
 
 ## Kontakt
