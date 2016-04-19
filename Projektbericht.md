@@ -131,7 +131,7 @@ Ansonsten haben wir den vorgegebenen code, den wir von der Sensebox-Registrierun
 
 Wir haben auf OpenSenseMap folgende Sensoren registriert:
 | Phänomen        | Einheit           | Typ  |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------| -----|
 | Luftfeuchtigkeit      | % | HDC1008 |
 | Temperatur      | °C      |   HDC1008 |
 | UV-Intensität | µW/cm²      |    VEML6070 |
