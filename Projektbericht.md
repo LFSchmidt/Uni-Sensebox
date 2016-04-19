@@ -20,7 +20,7 @@ Dieses Projekt misst Helligkeit, UV-Licht, Temperatur und Luftfeuchtigkeit. Mit 
 
 Wir haben den Ethernet Shield auf das Genuino UNO Board gesteckt, die Sensoren mit der Steckplatine und die Steckplatine mit dem Ethernet Shield verbunden wie im Bild:
 
-<img src="https://github.com/LFSchmidt/Uni-Sensebox/IWLS_sensebox_setup.jpg">
+<img src="https://github.com/LFSchmidt/Uni-Sensebox/blob/master/IWLS_sensebox_setup.jpg">
 
 
 ### Softwaresketch
