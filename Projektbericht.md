@@ -1,3 +1,4 @@
+<img src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/sensebox_logo_neu.png" width="200"/>
 
 # Sensebox mit Helligkeits-, UV-Licht-, Temperatur- und Feuchtigkeitssensoren
 
@@ -5,7 +6,7 @@
 Dieses Projekt misst Helligkeit, UV-Licht, Temperatur und Luftfeuchtigkeit. Mit der Helligkeitsmessung kann nachts die Lichtverschmutzung gemessen werden und tagsüber die Sonneneinstrahlung an der Stelle wo die Sensebox steht. UV-Licht und Temperatur werden zwar auch von Ämtern gemessen, aber der Großteil der Daten wird interpoliert, da nicht genug Messstationen vorhanden sind. Insofern ist das Messen dieser Faktoren interessant, um lokale Varianzen zu messen. Luftfeuchtigkeit ist interessant, um gewisse Wetterphänomene wie z.B. Glatteis vorauszusagen, da diese nur unter bestimmten Bedingungen auftreten.
 
 ## Materialien (aus der senseBox:edu)
-* Genuino UNO Board 
+* Genuino UNO Board
 * Ethernet Shield
 * Steckplatine
 * 16 Kabel
@@ -19,7 +20,7 @@ Dieses Projekt misst Helligkeit, UV-Licht, Temperatur und Luftfeuchtigkeit. Mit 
 
 Wir haben den Ethernet Shield auf das Genuino UNO Board gesteckt, die Sensoren mit der Steckplatine und die Steckplatine mit dem Ethernet Shield verbunden wie im Bild:
 
-
+<img src="https://github.com/LFSchmidt/Uni-Sensebox/IWLS_sensebox_setup.jpg">
 
 
 ### Softwaresketch
@@ -28,7 +29,7 @@ Zu der Erstellung der sketch haben wir die Wire und die HDC100X library verwende
 
 ```
 #include <Wire.h>
-#include <HDC100X.h> 
+#include <HDC100X.h>
 ```
 
 Folgender code sollte vor dem void setup() eingefügt werden und ist dafür verantwortlich die Variablen und Konstanten für die Nutzung der Sensoren zu deklarieren.
@@ -62,7 +63,7 @@ Folgender code wurde in dem void setup() Teil eingefügt und ist dafür verantwo
 ```
   // HDC setup
   HDC.begin(HDC100X_TEMP_HUMI, HDC100X_14BIT, HDC100X_14BIT, DISABLE);
-  
+
   // Light sensor setup
   Wire.begin();
   Wire.beginTransmission(I2C_ADDR);
@@ -90,19 +91,19 @@ Folgender code ist in dem void loop() Teil enthalten und ist dafür verantwortli
 
     // Request data from light sensor
     Wire.beginTransmission(I2C_ADDR);
-    Wire.write(0x80 | REG_DATALOW); 
+    Wire.write(0x80 | REG_DATALOW);
     Wire.endTransmission();
-    Wire.requestFrom(I2C_ADDR, 2); 
+    Wire.requestFrom(I2C_ADDR, 2);
     uint16_t low = Wire.read();
     uint16_t high = Wire.read();
     // Catch data if sensor is still sending
-    while(Wire.available()){ 
-      Wire.read(); 
+    while(Wire.available()){
+      Wire.read();
     }
     // Calculate data from light sensor in LUX
-    uint32_t lux; 
+    uint32_t lux;
     lux = (high << 8) | (low << 0);
-    lux = lux * 1; 
+    lux = lux * 1;
     light = lux;
 
     byte msb=0, lsb=0;
@@ -146,6 +147,3 @@ Danach wurde die Box längs und quer mit Kabelbinder verschnürt und, mithilfe e
 L. Schmidt  l_schm61[at]uni-muenster.de
 
 I. Wintzer   i_wint04[at]uni-muenster.de
-
-
-
